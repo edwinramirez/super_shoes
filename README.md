@@ -28,4 +28,9 @@ The username is `my_user` and password `my_password`.
 * Run `rake db:setup`. Or if you prefer, `rake db:create, db:migrate, and db:seed` individually.
 * Make sure you run `rake db:seed RAILS_ENV=test` because we need that seed data in our test database for Capybara testing purposes.
 * Start your Rails server and open up `http://localhost:3000/` in your browser. Change your port accordingly.
+* RSPEC tests are located in the following directories:
+  * /spec/controllers/stores_controller_spec.rb (REST service testing)
+  * /spec/features/articles_spec.rb (Capybara test for adding articles belonging to a store)
+  * /spec/features/stores_spec.rb (Capybara test for adding stores)
+  * /spec/models/store_spec.rb (Form validation testing)
 
